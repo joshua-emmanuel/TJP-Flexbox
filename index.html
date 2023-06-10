@@ -5,8 +5,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flexbox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <header class="flex box">
+      <img src="./images/tjp-logo.svg" alt="The Just Projects Logo">
+      <nav class="header__nav">
+        <ul class="flex">
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a class="header__nav-btn">Hire Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero flex box">
+        <div class="hero__text">
+          <p class="fw-bold">Welcome</p>
+          <h1>Sammy Jonathan</h1>
+          <p>I am a developer with a passion for building innovative&nbsp;and user-friendly software applications. Here are information about my skills, experience, and the projects.</p>
+          <a class="hero__btn">See My Projects</a>
+        </div>
+        <div class="hero__img">
+          <img src="./images/hero-image.svg">
+        </div>
+      </section>
+
+      <section class="about flex box">
+        <div class="about__img">
+          <img src="./images/about-image.svg" alt="">
+        </div>
+        <div class="about__text">
+          <h2>About Me</h2>
+          <p>I have experience in a variety of programming languages such as Java, Python, JavaScript, and Ruby. I also have expertise in web development, including front-end development with HTML, CSS, and JavaScript, as well as back-end development with frameworks such as Ruby on Rails and Django.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex box"> 
+      <img src="./images/tjp-logo.svg" alt="The Just Projects Logo">
+      <div class="footer__icons flex">
+        <a>
+          <img src="./images/fb-icon.svg" alt="Facebook icon">
+        </a>
+        <a>
+          <img src="./images/tw-icon.svg" alt="Twitter icon">
+        </a>
+        <a>
+          <img src="./images/insta-icon.svg" alt="Instagram icon">
+        </a>
+      </div>
+      <p>@2023 sammy jonathan</p>
+    </footer>
+  </div>
 </body>
 </html>

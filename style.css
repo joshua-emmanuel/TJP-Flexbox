@@ -33,6 +33,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   max-width: min(1311px, 100% - 2rem);
   margin-inline: auto;

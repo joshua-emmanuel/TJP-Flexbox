@@ -276,9 +276,19 @@ footer p {
     gap: 1rem;
   }
 
+  .project.box {
+    padding: 0;
+  }
+
   .project__text {
     width: 100%;
-    padding: .5rem;
+    padding: 1rem;
+    text-align: left;
+    border-radius: .5rem;
+  }
+
+  .project__text h2 {
+    text-align: center;
   }
 
   .project__text > * {
@@ -291,7 +301,7 @@ footer p {
   }
 
   .project__img {
-    position: static;
+    display: none;
   }
 
   /* Footer */

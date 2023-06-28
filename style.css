@@ -71,6 +71,7 @@ a {
 
 /* Header */
 header {
+  position: relative;
   justify-content: space-between;
   align-items: center;
   font-size: 1.25rem;
@@ -82,6 +83,20 @@ header {
   font-family: 'Halant', serif;
   gap: 4rem;
   list-style: none;
+}
+
+.nav-button {
+  display: none;
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  width: 2rem;
+  top: 1.6rem;
+  right: 1.5rem;
+}
+
+.nav-button img {
+  width: 100%;
 }
 
 .header__nav-btn {
@@ -180,4 +195,119 @@ footer {
 footer p {
   text-transform: uppercase;
   font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .box {
+    padding: 1.5rem .75rem;
+  }
+
+  header.flex {
+    flex-direction: row ;
+  }
+
+  header img {
+    width: 10rem;
+  }
+
+  .nav-button {
+    display: block;
+  }
+
+  /* Hero */
+  .hero {
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .hero__text {
+    flex-basis: 50%;
+  }
+
+  .hero__text p:first-child {
+    margin-bottom: 0;
+  }
+  
+  
+  .hero__btn {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .hero__img {
+    flex-basis: 50%;
+  }
+
+  /* About */
+  .about {
+    gap: 1rem;
+  }
+
+  /* Project */
+  .project {
+    position: static;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .project__text {
+    width: 100%;
+    padding: .5rem;
+  }
+
+  .project__text > * {
+    margin-bottom: .5rem;
+  }
+
+  .project__text ul {
+    font-size: 1rem;
+    padding-left: 1.25rem;
+  }
+
+  .project__img {
+    position: static;
+  }
+
+  /* Footer */
+  footer.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer > img {
+    width: 10rem;
+  }
+
+  .footer__icons.flex {
+    flex-direction: row;
+  }
 }
